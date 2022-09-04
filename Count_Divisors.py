@@ -3,4 +3,4 @@ c=0
 for i in range(l,r+1):
     if i%k==0:
         c+=1
-print(c)
+print(c)        
