@@ -1,5 +1,5 @@
 def prime(n):
-    if n==0 or n==1:
+    if n==1 or n==0:
         return False
     for i in range(2,int(n**.5)+1):
         if n%i==0:
@@ -8,11 +8,12 @@ def prime(n):
 n=int(input())
 if prime(n):
     while(n!=0):
-        res=n%10
+        rem=n%10
         n//=10
-    if(prime(res)):
-        print("Mega Prime")
+        if not prime(rem):
+            print("Not Mega Prime")
+            break
     else:
-        print("Not Mega Prime")
+        print("Mega Prime")
 else:
     print("Not Mega Prime")
