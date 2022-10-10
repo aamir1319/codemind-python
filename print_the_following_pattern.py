@@ -1,8 +1,6 @@
-n = int(input())
+n=int(input())
 
-a = n+ 64
-
-for i in range(a,64,-1):
-    for j in range(64,i):
-        print(chr(i),end=' ') 
+for i in range(65,65+n):
+    for j in range(n):
+        print(chr(i),end=' ')
     print()
