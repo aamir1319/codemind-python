@@ -1,27 +1,32 @@
 def prime(n):
     if n==1:
         return False
-    for i in range(2,int(n**0.5)+1):
-        if  n%i==0:
+    for i in range(2,int(n**.5)+1):
+        if n%i==0:
             return False
     return True
-
-a = int(input())
-after = a
-before =a
-while after:
     
+    
+n=int(input())
+if prime(n):
+    print(0)
+after=n
+before=n
+while after:
     if prime(after):
         break
     after+=1
-
+    
 while before:
     if prime(before):
         break
     before-=1
     
-if (after-a)>(a-before):
-    print(abs(a-before))
+    diff=after-n
+    diff1=n-before
+if diff<diff1:
+    print(abs(diff))
+elif diff>diff1:
+    print(diff1)
 else:
-    print(abs(a-after))
-    
+    print(abs(diff1))
