@@ -1,10 +1,13 @@
-n = int(input())
+a = int(input())
 
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if i==j or j==1 or i==n:
-            print("*",end='')
+b=a-1
+
+for i in range(a):
+    for j in range(a):
+        if i==j or j==b:
+            print('x',end='')
         else:
-            print(end=' ')
+            print('0',end='')
+        
     print()
-
+    b-=1
