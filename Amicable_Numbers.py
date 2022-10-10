@@ -1,18 +1,14 @@
-n = int(input())
-m = int(input())
-
-fact1 =0
-fact2 =0
+n=int(input())
+m=int(input())
+s=0
+d=0
 for i in range(1,n):
     if n%i==0:
-        fact1+=i
-if fact1==m:
-    for i in range(1,m):
-        if m%i==0:
-            fact2+=i
-    if fact2==n:
-        print('Amicable')
-    else:
-        print('Not Amicable')
+        s+=i
+for i in range(1,m):
+    if m%i==0:
+        d+=i
+if s==m and d==n:
+    print("Amicable")
 else:
-    print('Not Amicable')
+    print("Not Amicable")
