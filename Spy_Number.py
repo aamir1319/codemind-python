@@ -1,5 +1,4 @@
 a = int(input())
-
 sum_=0
 prod =1
 
