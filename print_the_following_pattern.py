@@ -1,11 +1,8 @@
-n=int(input())
-for i in range(n,0,-1):
-    for _ in range(i,1,-1):
-        print(end=' ')
-    for j in range(n):
-        if i==1 or i==n or j==0 or j==n-1:
-            print('*',end='')
+n = int(input())
 
-        else:
-            print(end=' ')
-    print()        
+a = n+ 64
+
+for i in range(a,64,-1):
+    for j in range(64,i):
+        print(chr(i),end=' ') 
+    print()
